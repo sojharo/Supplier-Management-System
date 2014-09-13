@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TestDBDataSet" targetNamespace="http://tempuri.org/TestDBDataSet.xsd" xmlns:mstns="http://tempuri.org/TestDBDataSet.xsd" xmlns="http://tempuri.org/TestDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TestDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TestDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ArifProject.Properties.Settings.GlobalReference.Default.TestDBConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view2TableAdapter" GeneratorDataComponentClassName="view2TableAdapter" Name="view2" UserDataComponentName="view2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TestDBConnectionString1 (Settings)" DbObjectName="TestDB.dbo.view2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Supplier, City, Amount_Payable, Amount_Paid, Balance, Discount FROM dbo.view2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Supplier" DataSetColumn="Supplier" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Amount_Payable" DataSetColumn="Amount_Payable" />
+              <Mapping SourceColumn="Amount_Paid" DataSetColumn="Amount_Paid" />
+              <Mapping SourceColumn="Balance" DataSetColumn="Balance" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TestDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TestDBDataSet" msprop:Generator_UserDSName="TestDBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view2" msprop:Generator_TableClassName="view2DataTable" msprop:Generator_TableVarName="tableview2" msprop:Generator_TablePropName="view2" msprop:Generator_RowDeletingName="view2RowDeleting" msprop:Generator_RowChangingName="view2RowChanging" msprop:Generator_RowEvHandlerName="view2RowChangeEventHandler" msprop:Generator_RowDeletedName="view2RowDeleted" msprop:Generator_UserTableName="view2" msprop:Generator_RowChangedName="view2RowChanged" msprop:Generator_RowEvArgName="view2RowChangeEvent" msprop:Generator_RowClassName="view2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Supplier" msprop:Generator_ColumnVarNameInTable="columnSupplier" msprop:Generator_ColumnPropNameInRow="Supplier" msprop:Generator_ColumnPropNameInTable="SupplierColumn" msprop:Generator_UserColumnName="Supplier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount_Payable" msprop:Generator_ColumnVarNameInTable="columnAmount_Payable" msprop:Generator_ColumnPropNameInRow="Amount_Payable" msprop:Generator_ColumnPropNameInTable="Amount_PayableColumn" msprop:Generator_UserColumnName="Amount_Payable" type="xs:int" minOccurs="0" />
+              <xs:element name="Amount_Paid" msprop:Generator_ColumnVarNameInTable="columnAmount_Paid" msprop:Generator_ColumnPropNameInRow="Amount_Paid" msprop:Generator_ColumnPropNameInTable="Amount_PaidColumn" msprop:Generator_UserColumnName="Amount_Paid" type="xs:int" minOccurs="0" />
+              <xs:element name="Balance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:int" minOccurs="0" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
